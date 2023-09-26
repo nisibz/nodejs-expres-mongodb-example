@@ -9,13 +9,13 @@ const {
 } = require("../controller/Todolist.controller");
 
 router
-  .route("/api/todolist")
+  .route("/todolist")
 
   .get(getAllTodolist)
   .post(insertTodolist);
 
 router
-  .route("/api/todolist/:id")
+  .route("/todolist/:id")
 
   .put(updateTodolist)
   .delete(deleteTodolist);
